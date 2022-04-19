@@ -1,6 +1,33 @@
-/* add your css styles here! */
+/* Set card image size */
+#saleProducts .card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+#sale1 .card-img-top {
+    background-image: url("../imgs/sale1.jpeg");
+    background-size: cover;
+}
+
+#sale2 .card-img-top {
+    background-image: url("../imgs/sale2.jpeg");
+    background-size: cover;
+}
+
+#sale3 .card-img-top {
+    background-image: url("../imgs/sale3.jpeg");
+    background-size: cover;
+}
+
+#sale4 .card-img-top {
+    background-image: url("../imgs/sale4.jpeg");
+    background-size: cover;
+}
+
+
 #header {
-    height: 500px;
+    height: 400px;
     background-image: url("../imgs/header-bg.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
