@@ -6,7 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -19,185 +21,184 @@
 </head>
 
 <body>
-
-  <div id="header" class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
-    <h1>Pottery</h1>
-    <p>Resize this responsive page to see the effect!</p>
-  </div>
-
-  <!-- Sale Products -->
-  <div id="saleProducts" class="jumbotron jumbotron-fluid bg-white">
-    <div class="container text-center">
-      <h1>Sale Products</h1>
-      <p>Here you can find new products and last chances</p>
-      <div class="row">
-        <div class="col-3">
-          <div id="sale1" class="card">
-            <div class="container card-img-top text-left">
-              <span class="badge badge-warning">$ 100</span>
-            </div>
-            <div class="card-body">
-              <p class="card-text">New Products</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div id="sale2" class="card">
-            <div class="container card-img-top text-left">
-              <span class="badge badge-warning">$ 80</span>
-            </div>
-            <div class="card-body">
-              <p class="card-text">New Products</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div id="sale3" class="card">
-            <div class="container card-img-top text-left">
-              <span class="badge badge-danger">New</span>
-            </div>
-            <div class="card-body">
-              <p class="card-text">Last chance</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div id="sale4" class="card">
-            <div class="container card-img-top text-left">
-              <span class="badge badge-danger">New</span>
-            </div>
-            <div class="card-body">
-              <p class="card-text">Last chance</p>
-            </div>
-          </div>
-        </div>
+  <div class="container-fluid bg-light">
+    <div id="main-content" class="mx-auto">
+      <div id="header" class="jumbotron jumbotron-fluid text-center m-0">
+        <h1>Pottery Studio</h1>
       </div>
-    </div>
-  </div>
-
-
-  <!-- Pottery Classes -->
-  <div class="jumbotron jumbotron-fluid bg-white">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imgs/pottery-classes.jpeg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imgs/design-process.jpeg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imgs/pottery-classes.jpeg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Gallery -->
-  <div class="jumbotron jumbotron-fluid bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 p-1">
-          <div class="border bg-light">Level 1: .col-3</div>
-        </div>
-        <div class="col-6">
-          <div class="row row-cols-2">
-            <div class="col p-1">
-              <div class="border bg-light">Level 2: .col-8 .col-sm-6</div>
-            </div>
-            <div class="col p-1">
-              <div class="border bg-light">Level 2: .col-4 .col-sm-6</div>
-            </div>
-            <div class="col p-1">
-              <div class="border bg-light">Level 2: .col-4 .col-sm-6</div>
-            </div>
-            <div class="col p-1">
-              <div class="border bg-light">Level 2: .col-4 .col-sm-6</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="jumbotron jumbotron-fluid bg-white">
-    <div class="container">
-      <div class="row">
+      <!-- Sale Products -->
+      <div id="saleProducts" class="row">
         <div class="col">
-          <div class="container">
-            <div class="card" style="width: 18rem;">
-              <img src="imgs/pottery-classes.jpeg" class="card-img-top" alt="Pottery Class Image">
-              <div class="card-body">
-                <h5 class="card-title">Pottery Classes (Beginner)</h5>
-                <p class="card-text">We will begin with introductions and a basic wheel demonstration by one of our
-                  instructors. You will learn the basic steps of throwing a cylinder on the potter's wheel before trying
-                  it out yourself.</p>
-                <a href="#" class="btn btn-primary">Show me more</a>
+          <div class="container-fluid px-3 py-5 text-center bg-white">
+            <h1>Sale Products</h1>
+            <p>Here you can find new products and last chances</p>
+            <div class="row">
+              <div class="col-3">
+                <div id="sale1" class="card">
+                  <div class="container card-img-top text-left">
+                    <span class="badge badge-warning">$ 100</span>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">New Products</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="container">
-            <div class="card" style="width: 18rem;">
-              <img src="imgs/pottery-classes.jpeg" class="card-img-top" alt="Pottery Class Image">
-              <div class="card-body">
-                <h5 class="card-title">Design Process</h5>
-                <p class="card-text">We will begin with introductions and a basic wheel demonstration by one of our
-                  instructors. You will learn the basic steps of throwing a cylinder on the potter's wheel before trying
-                  it out yourself.</p>
-                <a href="#" class="btn btn-primary">Show me more</a>
+              <div class="col-3">
+                <div id="sale2" class="card">
+                  <div class="container card-img-top text-left">
+                    <span class="badge badge-warning">$ 80</span>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">New Products</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div id="sale3" class="card">
+                  <div class="container card-img-top text-left">
+                    <span class="badge badge-danger">New</span>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Last chance</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div id="sale4" class="card">
+                  <div class="container card-img-top text-left">
+                    <span class="badge badge-danger">New</span>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Last chance</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Subscribe -->
-  <div class="jumbotron jumbotron-fluid bg-dark">
-    <div class="container p-3">
-      <div class="row">
+      <!-- Pottery Classes -->
+      <div id="potteryClasses" class="row">
         <div class="col">
-          <div class="border bg-light">Pottery Classes</div>
+          <div class="container-fluid bg-dark p-0">
+            <div id="carouselPotteryClassesAndDesignProcess" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselPotteryClassesAndDesignProcess" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselPotteryClassesAndDesignProcess" data-slide-to="1"></li>
+                <li data-target="#carouselPotteryClassesAndDesignProcess" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                  <img src="imgs/pottery-classes.jpeg" class="d-block">
+                  <div class="carousel-caption p-1" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <h4>Beginner Classes</h4>
+                    <h6>6-Week Beginner Wheel Throwing</h6>
+                    <p class="d-none d-md-block">
+                      We will begin with introductions and a basic wheel demonstration by one of our instructors. You
+                      will
+                      learn
+                      the basic steps of throwing a cylinder on the potter's wheel before trying it out yourself.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/pottery-classes2.jpeg" class="d-block">
+                  <div class="carousel-caption p-1" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <h4>Intermediate Classes</h4>
+                    <h6>6-Week Intermediate Wheel Throwing</h6>
+                    <p class="d-none d-md-block">
+                      Take your skills to the next level in this series of intermediate pottery classes. You'll get to
+                      take a
+                      deeper study into wheel throwing in this six-week course.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/design-process.jpeg" class="d-block">
+                  <div class="carousel-caption p-1" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <h4>Design Process</h4>
+                    <div class="d-none d-md-block text-left">
+                      <p>
+                        <b>Make your piece:</b>
+                        In classes, you will refine your skills at the pottery wheel making functional pieces like
+                        bowls,
+                        plates,
+                        and mugs.
+                      </p>
+                      <p>
+                        <b>Glaze:</b>
+                        In classes, you will learn glazing techniques to give your pottery color and make your ceramics
+                        waterproof.
+                      </p>
+                      <p>
+                        <b>Fire:</b>
+                        In classes, you will fire your own clay pieces to a high temperature. The final aim is to heat
+                        the
+                        piece
+                        to the point that the clay and glazes are mature.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-target="#carouselPotteryClassesAndDesignProcess"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-target="#carouselPotteryClassesAndDesignProcess"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- Gallery -->
+      <div id="gallery" class="row">
         <div class="col">
-          <div class="border bg-light">Pottery Process</div>
+          <div class="container-fluid p-5 bg-dark text-center">
+            <h2 class="text-light p-3">Project Gallery</h2>
+            <div class="row">
+              <div class="col p-0">
+                <div class="img-gallery img-gallery-1 h-100"></div>
+              </div>
+              <div class="col">
+                <div class="row h-100 row-cols-2">
+                  <div class="col p-0">
+                    <div class="img-gallery img-gallery-2"></div>
+                  </div>
+                  <div class="col p-0">
+                    <div class="img-gallery img-gallery-3"></div>
+                  </div>
+                  <div class="col p-0">
+                    <div class="img-gallery img-gallery-4"></div>
+                  </div>
+                  <div class="col p-0">
+                    <div class="img-gallery img-gallery-5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="row my-3">
+        <div class="col">
+          <div id="footer" class="container-fluid p-5 text-center">
+            <a href="" class="bi bi-at text-dark"></a>
+            <a href="" class="bi bi-facebook text-dark"></a>
+            <a href="" class="bi bi-twitter text-dark"></a>
+            <a href="" class="bi bi-whatsapp text-dark"></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
-    <p>Footer</p>
-  </div>
 
 </body>
 

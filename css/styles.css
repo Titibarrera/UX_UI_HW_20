@@ -1,35 +1,109 @@
+#main-content {
+    max-width: 800px;
+}
+
 /* Set card image size */
 #saleProducts .card-img-top {
     width: 100%;
-    height: 20vw;
+    height: min(20vw, 300px);
     object-fit: cover;
 }
+
+/* #saleProducts .card-body {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+} */
 
 #sale1 .card-img-top {
     background-image: url("../imgs/sale1.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #sale2 .card-img-top {
     background-image: url("../imgs/sale2.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #sale3 .card-img-top {
     background-image: url("../imgs/sale3.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #sale4 .card-img-top {
     background-image: url("../imgs/sale4.jpeg");
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Set Carousel max height */
+.carousel .carousel-item img {
+    max-height: min(70vw, 700px);
+    min-width: auto;
+    margin: auto;
 }
 
 
 #header {
-    height: 400px;
-    background-image: url("../imgs/header-bg.jpeg");
+    height: min(50vw, 300px);
+    background-image: url("../imgs/header-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom 0px right 0px;
+}
+
+#header h1 {
+    font-family: 'Satisfy', serif;
+    font-size: 4rem;
+}
+
+/* Gallery */
+.img-gallery {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100%;
     background-position: center;
+}
+
+.img-gallery-1 {
+    background-image: url("../imgs/gallery1.jpeg");
+}
+
+.img-gallery-2 {
+    background-image: url("../imgs/gallery2.jpeg");
+}
+
+.img-gallery-3 {
+    background-image: url("../imgs/gallery3.jpeg");
+}
+
+.img-gallery-4 {
+    background-image: url("../imgs/gallery4.jpeg");
+}
+
+.img-gallery-5 {
+    background-image: url("../imgs/gallery5.jpeg");
+}
+
+/* Subscribe */
+#subscribe .container-fluid {
+    min-height: 100px;
+    background-image: url("../imgs/subscribe-bg.jpeg");
+    background-repeat: no-repeat;
+}
+
+/* Footer icons */
+#footer {
+    height: max(20vw, 380px);
+    background-image: url("../imgs/footer-bg.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    letter-spacing: 1rem;
+}
+
+#footer .bi {
+    font-size: 2rem;
 }
